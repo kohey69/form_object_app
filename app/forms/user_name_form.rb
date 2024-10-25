@@ -17,10 +17,10 @@ class UserNameForm
     super(**attrs)
   end
 
-  def save(...)
+  def save(**options)
     transfer_attributes
     if valid?
-      user.save(...)
+      user.save(**options)
     else
       false
     end
